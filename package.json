@@ -1,7 +1,7 @@
 {
   "name": "cold-snack-syntax",
   "theme": "syntax",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This is a port of evrowe's vscode-cold-snack theme for Atom.",
   "keywords": [
     "syntax",

@@ -16,6 +16,10 @@ atom-text-editor {
     color: @syntax-invisible-character-color;
   }
 
+  .line.cursor-line {
+    background-color: darken(@blue-light, 30%);
+  }
+
   .gutter {
     background-color: @syntax-gutter-background-color;
     color: @syntax-gutter-text-color;
@@ -149,6 +153,10 @@ atom-text-editor {
     color: @blue-lightest;
   }
 }
+
+
+
+
 
 .syntax--invalid.syntax--illegal {
   background-color: @red;
@@ -358,6 +366,14 @@ atom-text-editor {
 
   &.syntax--deleted {
     color: @red;
+  }
+
+  &.syntax--inline {
+    &.syntax--raw {
+      &.syntax--markdown {
+        color: @orange;
+      }
+    }
   }
 
   &.syntax--italic {
