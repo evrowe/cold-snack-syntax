@@ -1,0 +1,16 @@
+{
+  "name": "cold-snack-syntax",
+  "theme": "syntax",
+  "version": "0.0.1",
+  "description": "This is a port of evrowe's vscode-cold-snack theme for Atom.",
+  "keywords": [
+    "syntax",
+    "theme",
+    "cold snack"
+  ],
+  "repository": "https://github.com/salcido/cold-snack-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
