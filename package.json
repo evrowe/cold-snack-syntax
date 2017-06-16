@@ -2,11 +2,12 @@
   "name": "cold-snack-syntax",
   "theme": "syntax",
   "version": "0.0.2",
-  "description": "This is a port of evrowe's vscode-cold-snack theme for Atom.",
+  "description": "This is a port of evrowe's vscode-cold-snack theme for Atom. There is also a companion UI theme called Cold Snack UI.",
   "keywords": [
     "syntax",
     "theme",
-    "cold snack"
+    "cold snack",
+    "montucky"
   ],
   "repository": "https://github.com/salcido/cold-snack-syntax",
   "license": "MIT",
