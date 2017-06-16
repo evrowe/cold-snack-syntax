@@ -66,7 +66,7 @@ atom-text-editor {
   color: @yellow-light;
 
   &.syntax--control {
-    color: @maroon-light;
+    color: @maroon-lightest;
 
     &.syntax--conditional,
     &.syntax--default,
@@ -75,6 +75,7 @@ atom-text-editor {
     &.syntax--from,
     &.syntax--import,
     &.syntax--loop,
+    &.syntax--keyframes,
     &.syntax--trycatch {
       color: @yellow-light;
       font-style: italic;
@@ -121,7 +122,7 @@ atom-text-editor {
   }
 
   &.syntax--numeric {
-    color: @maroon-light;
+    color: @maroon-lightest;
   }
 
   &.syntax--other.syntax--color {
@@ -166,14 +167,9 @@ atom-text-editor {
 .syntax--string {
   color: @blue-lightest;
 
-  &.syntax--quoted {
+  &.syntax--json {
     font-style: italic;
-
-    &.syntax--double {
-      &.syntax--json {
-        color: @maroon-lightest;
-      }
-    }
+    color: @maroon-lightest;
   }
 
   &.syntax--regexp {
@@ -220,23 +216,14 @@ atom-text-editor {
       color: @white;
     }
 
-    &.syntax--string {
-      color: @blue-lightest;
-      &.syntax--begin {
-        &.syntax--json {
-          color: @blue-lightest;
-        }
-      }
-    }
-
     &.syntax--variable,
     &.syntax--array {
-      color: @maroon-light;
+      color: @maroon-lightest;
     }
 
     &.syntax--heading,
     &.syntax--identity {
-      color: @blue;
+      color: @blue-light;
     }
 
     &.syntax--bold {
@@ -245,7 +232,7 @@ atom-text-editor {
     }
 
     &.syntax--italic {
-      color: @maroon-light;
+      color: @maroon-lightest;
       font-style: italic;
     }
   }
@@ -316,7 +303,7 @@ atom-text-editor {
     color: @maroon-lightest;
 
     &.syntax--id {
-      color: @blue;
+      color: @blue-lightest;
     }
   }
 }
@@ -337,16 +324,24 @@ atom-text-editor {
   }
 
   &.syntax--require {
-    color: @blue;
+    color: @blue-lightest;
   }
 
   &.syntax--selector {
-    color: @maroon-light;
+    color: @maroon-lightest;
   }
 
   &.syntax--separator {
     background-color: @blue-lightest;
     color: @syntax-text-color;
+  }
+
+  &.syntax--structure {
+    &.syntax--dictionary {
+      &.syntax--value .syntax--quoted {
+        color: @maroon-lightest;
+      }
+    }
   }
 }
 
@@ -361,7 +356,7 @@ atom-text-editor {
   }
 
   &.syntax--changed {
-    color: @maroon-light;
+    color: @maroon-lightest;
   }
 
   &.syntax--deleted {
@@ -377,7 +372,7 @@ atom-text-editor {
   }
 
   &.syntax--italic {
-    color: @maroon-light;
+    color: @maroon-lightest;
     font-style: italic;
   }
 
